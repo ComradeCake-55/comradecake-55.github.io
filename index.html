@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.dark.min.css"
+        integrity="sha512-EDTXRzNPgbDm1rnK2ygrQW6a2VfBevLScCcY885cJ3C2OohFOxZ3btokYPAyLPJfJrnO151SxsW7Yzj9n7nUew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/index.css">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/704b17f2b8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="d-flex align-items-center justify-content-center" style="height: 350px;padding-top: 25%;">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Log in</h5>
+                <p class="card-text">Access will only be given to those who have accounts</p>
+                <form>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input id="form1" class="form-control" required/>
+                        <label class="form-label" for="form1">User Name</label>
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="form2" class="form-control" required/>
+                        <label class="form-label" for="form2">Password</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="button" onclick="myFunction()" class="btn btn-success btn-block">Log in</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("form1").value;
+            let y = document.getElementById("form2").value;
+
+            if (x == 'Admin' && y == '9773377') {
+                location.replace("/home.html")
+            }
+        }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+        integrity="sha512-jgqnY5wi2gxl4Yj4iXEEpVWrBI6JeJQc67LVC/a65X/TeMotFC0veqlMqYHAI3FfS3hCdx5z6fqKFzXqdnKXDw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
